@@ -14,7 +14,8 @@ createBtn.addEventListener("click", function () {
     note.setAttribute.Placeholder = "Hello"
     note.className = "note-box"
     img.src = "images/delete.png"
-    notesContainer.prepend(note).appendChild(img);
+    note.appendChild(img);
+    notesContainer.prepend(note);
 })
 
 function updateStorage() {
